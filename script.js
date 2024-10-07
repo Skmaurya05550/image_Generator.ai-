@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
       imageContainer.innerHTML = "";
       imageContainer.appendChild(image);
     };
-
     image.src = imageUrl;
   });
 });
