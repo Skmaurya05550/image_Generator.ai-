@@ -24,7 +24,7 @@ This is a simple image generator web app that uses Pollinations API to generate 
 
 ## Screenshot
 
-![Image Generator Screenshot](img/screenshot.png)
+![Image Generator Screenshot](https://ibb.co/Q8wTd5bhttps://ibb.co/m4qgYyb)
 
 ## License
 
