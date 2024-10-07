@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Generator :)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <div class="generator">
+      <div class="input">
+        <br>
+        <input class="promptBox" type="text" id="prompt" placeholder="Enter your img name here">
+      </div>
+      <div>
+        <input class="heightWidth" type="text" id="hInput" placeholder="Height">
+        <input class="heightWidth" type="text" id="wInput" placeholder="Width">
+      </div>
+      <br>
+    </div>
+    <div>
+      <button id="generate">Generate Image</button>
+    </div>
+    <div class="output">
+      <h2 id="generatedText">Generated Image:</h2>
+      <div id="loading-spinner" class="loader"></div>
+      <div id="image-container">
+      </div>
+      <div id="utilities">
+        <a id="dlButton" href="">download</a>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
