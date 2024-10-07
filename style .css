@@ -1,1 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
 
+* {
+  font-family: "Skm@555", Arial, sans-serif;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+header {
+  min-width: 40%;
+  max-width: 60%;
+  margin: 0rem auto;
+  background-color: #333;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0 0 80px rgba(255, 255, 255, 0.1);
+}
+
+main {
+  min-width: 40%;
+  max-width: 60%;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background-color: #333;
+  border-radius: 20px;
+  box-shadow: 0 0 80px rgba(255, 255, 255, 0.1);
+}
+
+.generator {
+  text-align: center;
+}
+
+.input {
+  margin-bottom: 1rem;
+}
+
+.promptBox {
+  width: 95%;
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 20px;
+}
+
+.heightWidth {
+  width: 40%;
+  padding: 0.5rem;
+  border-style: none;
+}
+
+#hInput {
+  border-radius: 20px 4px 4px 20px;
+}
+
+#wInput {
+  border-radius: 4px 20px 20px 4px;
+}
+
+button {
+  background-color: #0074d9;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 0 80px rgb(0, 116, 217, 0.4);
+}
+
+#dlButton {
+  background-color: #0074d9;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 80px rgb(0, 116, 217, 0.4);
+  border-radius: 20px;
+  display: none;
+}
+
+#generate {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 40px;
+  width: 80%;
+  background-color: #0074d9;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 0 80px rgba(0, 116, 217, 0.5);
+  transition: opacity 0.333s;
+}
+
+#generate.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.output {
+  text-align: center;
+}
+
+#image-container img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+.discreteLink {
+  color: whitesmoke;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #0074d9;
+}
+
+#generatedText {
+  display: none;
+}
+
+.loader {
+  border: 6px solid black;
+  border-top: 6px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
